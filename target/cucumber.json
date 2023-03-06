@@ -1,0 +1,167 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User open salesforce application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2023-03-05T23:28:41.096Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1926957300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.steps.StepDefinitionForSalesForce.setUp1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 136636000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.steps.StepDefinitionForSalesForce.setUp2()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1007316400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.steps.StepDefinitionForFireBase.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "login with clear password field",
+        "description": "",
+        "id": "login-into-salesforce-automation-functionality;login-with-clear-password-field",
+        "after": [
+          {
+            "result": {
+              "duration": 214438800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.steps.StepDefinitionForFireBase.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 637294800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user open salesforce application",
+            "match": {
+              "location": "com.steps.StepDefinitionForSalesForce.user_open_salesforce_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException: Cannot invoke \"String.equalsIgnoreCase(String)\" because \"page\" is null\r\n\tat com.steps.StepDefinitionForSalesForce.user_on(StepDefinitionForSalesForce.java:47)\r\n\tat ✽.user on \"LoginPage\"(file:///C:/Users/Ashish/eclipse-workspace/cucumberPOMframework/src/test/resources/salesforceautomation.feature:8)\r\n",
+              "duration": 3989800,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user on \"LoginPage\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LoginPage\"",
+                  "offset": 8
+                }
+              ],
+              "location": "com.steps.StepDefinitionForSalesForce.user_on(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enters value into the box username as \"suhana7@tekarch.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"suhana7@tekarch.com\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.steps.StepDefinitionForSalesForce.user_enters_value_into_the_box_username_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user clear password field as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 29
+                }
+              ],
+              "location": "com.steps.StepDefinitionForSalesForce.user_clear_password_field_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998600,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "click on Login button",
+            "match": {
+              "location": "com.steps.StepDefinitionForSalesForce.click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1008200,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "alert is present with the text \"Please enter your password.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter your password.\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.steps.StepDefinitionForSalesForce.alert_is_present_with_the_text(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "login into salesforce automation functionality",
+    "description": "",
+    "id": "login-into-salesforce-automation-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/salesforceautomation.feature",
+    "tags": []
+  }
+]
